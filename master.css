@@ -1,0 +1,28 @@
+
+body{
+    font-family: 'Assistant', sans-serif;
+
+}
+
+.intro-video {
+    font-family: 'Lobster', cursive;
+    height: 100vh;
+    width: 100%;
+    background-color: snow;
+    padding-top: 200px;
+}
+
+.about-section {
+    height: 600px;
+    width: 100%;
+}
+
+.price-section {
+    height: 600px;
+    width: 100%;
+    background-color: snow;
+}
+
+.menu-list {
+    list-style-type: none;
+}
