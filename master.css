@@ -6,10 +6,56 @@ body {
 
 .intro-video {
     font-family: 'Lobster', cursive;
-    height: 100vh;
+    height: 730px;
     width: 100%;
-    background-color: ivory;
+    background-image: url("images/shop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 200px;
+}
+
+.intro-video h1 {
+    font-size: 80px;
+}
+
+.navbar {
+    transition: all 0.4s;
+}
+
+
+.navbar .nav-link {
+    color:  #161a1d;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color:  #161a1d;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color:  #161a1d;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
 }
 
 .phii {
@@ -28,17 +74,30 @@ body {
 .about-section {
     height: 730px;
     width: 100%;
-    background-color: #ffa333;
+    background-color: #f2f2f2;
 }
 
-.about-pic {
-    margin-top: 80px;
+.about-section img {
+    height: 470px;
+    width: 350px;
+}
+
+.about-margin {
+    margin-top: 40px;
+}
+
+.about-spacing {
+    padding-top: 20px;
+}
+
+.pic-pad {
+    padding-top: 50px;
 }
 
 /* --Prices-- */
 
 .price-section {
-    height: 730px;
+    height: 637px;
     width: 100%;
     
 }
@@ -49,7 +108,7 @@ body {
 }
 
 .price-title {
-    padding-top: 100px;
+    padding-top: 30px;
     font-weight: bold;
 }
 
@@ -63,7 +122,7 @@ body {
 }
 
 .menu-title {
-    margin-right: 160px;
+    margin-right: 370px;
     margin-bottom: 0px;
 }
 
@@ -71,14 +130,13 @@ body {
 /* --Portfolio-- */
 
 .portfolio-section {
-    height: 730px;
+    height: 700px;
 }
 
 .quote {
-    padding-left: ;
-    padding-right:;
-    padding-top: 320px;
-    padding-bottom: 320px;
+    
+    padding-top: 312px;
+    padding-bottom: 324px;
     background-color: #262626;
     color: ivory;
    
@@ -87,7 +145,7 @@ body {
 /* --Cuts-- */
 
 .cut-section {
-    height: 730px;
+    height: 630px;
     width: 100%;
     background-color: snow;
 }
@@ -139,7 +197,7 @@ body {
 
 .news-letter {
     font-size: 25px;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 60px;
     background-image: url(https://images.unsplash.com/photo-1573588546512-2ace898aa480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
     background-image: cover;
@@ -164,6 +222,11 @@ body {
     padding-top: 150px;
 }
 
+.form-message {
+    padding-top: 25px;
+    padding-bottom: 80px;
+}
+
 /* --Footer-- */
 
 .footer-section {
@@ -173,15 +236,67 @@ body {
 
 
 
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
 
+    .menu-title {
+        margin-right: 280px;
+        margin-bottom: 0px;
+    }
+    
+    .about-section{
+        height: 630px;
+    }
 
+    .about-margin {
+        margin-top: 0px;
+    }
 
+    .pic-pad {
+        padding-top: 70px;
+    }
+}
+  
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
 
-/* Extra small devices (portrait phones, less than 576px)
- No media query since this is the default in Bootstrap */
+    
+    .about-section {
+        height: 655px;
+        width: 100%;
+    }
 
-/* Small devices (landscape phones, 576px and up) */ 
-@media (min-width: 576px) { 
+    .about-spacing {
+        padding-top: 15px;
+    }
+
+    .about-margin {
+        margin-top: 0px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .pic-pad {
+        padding-top: 150px;
+    }
+
+    .price-section {
+        height: 615px;
+        width: 100%;
+    }
+
+    .menu-title {
+        margin-right: 170px;
+        margin-bottom: 0px;
+    }
+   
+    
+ }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
 
     .intro-video h1 {
         font-size: 80px;
@@ -208,10 +323,14 @@ body {
     }
 
     .about-spacing {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
-    .about-pic {
+    .pic-pad {
+        padding-top: 40px;
+    }
+
+    .about-margin {
         margin-top: 0px;
     }
 
@@ -225,6 +344,22 @@ body {
 
     .address {
         padding-top: 10px;
+    }
+
+    /* --Portfolio-- */
+
+    .portfolio-section {
+        height: 709px;
+        width: 100%;
+    }
+
+    .quote {
+
+        padding-top: 320px;
+        padding-bottom: 325px;
+        background-color: #262626;
+        color: ivory;
+       
     }
 
     /* --Cuts-- */
@@ -242,121 +377,260 @@ body {
         width: 500px;
     }
 
+    /* --Newsletter-- */
+
+    .news-letter {
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
    /* --Booking-- */
 
     .booking-section {
-        height: 890px;
+        height: 975px;
+        width: 100%;
+        background-color: snow;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+}
+
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) { 
+
+    .intro-video {
+        height: 500px;
+        padding-top: 100px;
+    }
+
+    .intro-video h1 {
+        font-size: 60px;
+    }
+
+    .about-section {
+        height: 1715px;
+    }
+
+    .about-spacing {
+        padding-top: 15px;
+    }
+
+    .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .phone-size {
+        display: flex;
+        justify-content: center;
+        height: 600px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    
+    .price-section {
+        height: 1068px;
+        width: 100%;
+        
+    }
+
+    .menu-title {
+        margin-right: 375px;
+        margin-bottom: 0px;
+    }
+
+    .portfolio-section {
+        height: 1016px;
+    }
+
+    .quote {
+
+        padding-top: 220px;
+        padding-bottom: 220px;
+        background-color: #262626;
+        color: ivory;
+       
+    }
+
+    .quote h5 {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .news-letter {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .news-letter button {
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+
+    /* Extra  Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 375.98px) { 
+
+    .intro-video {
+        height: 500px;
+        padding-top: 100px;
+    }
+
+    .intro-video h1 {
+        font-size: 60px;
+    }
+
+    .about-section {
+        height: 1580px;
+    }
+
+    .about-spacing {
+        padding-top: 10px;
+    }
+
+    .img-fluid {
+        height: 100%;
+        width: 100%;
+    }
+
+    .phone-size {
+        display: flex;
+        justify-content: center;
+        height: 500px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    
+    .price-section {
+        height: 1068px;
+        width: 100%;
+        
+    }
+
+    .menu-title {
+        margin-right: 180px;
+        margin-bottom: 0px;
+    }
+
+    .portfolio-section {
+        height: 1016px;
+    }
+
+    .quote {
+
+        padding-top: 220px;
+        padding-bottom: 220px;
+        background-color: #262626;
+        color: ivory;
+       
+    }
+
+    .quote h5 {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .news-letter {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .news-letter button {
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    /* --Prices
+
+    .price-section {
+        height: 655px;
+        width: 100%;
+        
+    }
+
+    .price-title {
+        padding-top: 50px;
+        font-weight: bold;
+    }
+
+
+    .about-section {
+        height: 900px;
+        width: 100%;
+    }
+
+   
+
+    .about-pic {
+        margin-top: 80px;
+    }
+
+
+
+    .menu-title {
+        margin-right: 80px;
+        margin-bottom: 0px;
+    }
+
+    .address {
+        padding-top: 10px;
+    }
+
+
+    .portfolio-section {
+        height: 750px;
+    }
+
+    .quote {
+
+        padding-top: 320px;
+        padding-bottom: 320px;
+        background-color: #262626;
+        color: ivory;
+       
+    }
+
+
+    .cut-section {
+        height: 1000px;
+        width: 100%;
+        background-color: snow;
+    }
+
+    
+
+    .cut-photo img {
+        height: 275px;
+        width: 500px;
+    }
+
+   
+
+    .booking-section {
+        height: 975px;
         width: 100%;
         background-color: snow;
     }
 
     i {
         font-size: 50px;
-    }
+    } -- */
 
- }
+}
+ 
 
-/*Medium devices (tablets, 768px and up)*/ 
-@media (min-width: 768px) { 
-
-    /* --About-- */
-
-    .about-section {
-        height: 1000px;
-        width: 100%;
-    }
-
-    /* --Cuts-- */
-
-    .cut-section {
-        height: 775px;
-        width: 100%;
-        background-color: snow;
-    }
-
-    .cut-photo img {
-        height: 350px;
-        width: 500px;
-    }
-
-    /* --Newsletter-- */
-
-    .news-letter {
-        font-size: 25px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-image: url(https://images.unsplash.com/photo-1573588546512-2ace898aa480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
-        background-image: cover;
-        
-
-    }
-
-    .menu-title {
-        margin-right: 165px;
-        margin-bottom: 0px;
-    }
-
-    
-   /* --Booking-- */
-
-    .booking-section {
-        height: 730px;
-        width: 100%;
-        background-color: snow;
-    }
-
-    .address {
-        padding-top: 150px;
-    }
-
-
- }
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-
-    .about-section {
-
-        height: 675px;
-        width: 100%;
-    }
-
-    .about-spacing {
-        padding-top: 100px;
-    }
-
-    .menu-title {
-        margin-right: 280px;
-        margin-bottom: 0px;
-    }
-
-   
-
- }
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    
-    .about-section {
-
-        height: 675px;
-        width: 100%;
-    }
-
-  .about-spacing {
-        padding-top: 65px;
-    }
-
-    .menu-title {
-        margin-right: 370px;
-        margin-bottom: 0px;
-    }
-
-    .cut-section {
-        height: 800px;
-        width: 100%;
-        background-color: snow;
-    }
-
- }
-
+/* Extra large devices (large desktops) */
+/* No media query since the extra-large breakpoint has no upper bound on its width */

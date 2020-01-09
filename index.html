@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>phiiforhair.com</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="master.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
@@ -14,30 +13,64 @@
 
 </head>
 <body>
+
+    
     <!-- Start Header -->
-    <div class="intro-video text-center">
+    <div id="Home"  class="intro-video text-center">
         <h1 class="display-1 pt-5">Phii for Hair</h1>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-3 pb-3">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="#Home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#Prices">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#Booking">Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
     <!-- End Header -->
+
     
 
     <!-- Start About -->
-    <section class="about-section">
+    <section id="About"  class="about-section">
         <div class="container">
             <div class="row about-spacing">
-                <div class="col-lg-4 col-md-12 col-sm-12 about-pic">
-                    <h1 class="pt-5 pb-3 phii">About The Shop</h1>
-                    <h4 class="font-weight-lighter text-muted pb-3">A Barber Shop that's been around for 4 decades that was taken over by Kinkaid Nolen almost 20 years ago.</h4>
-                    <h5 class="pt-3">Open Hours:</h5>
+                <div class="col-lg-4 col-md-4 col-sm-8 about-margin pt-5">
+                    <h1 class="about-spacing phii ">About The Shop</h1>
+                    <h4 class="font-weight-lighter text-muted about-spacing">A Barber Shop that's been around for 4 decades that was taken over by Kinkaid Nolen almost 20 years ago.</h4>
+                    <div class="hide">
+                        <p class="font-weight-light about-spacing">The best thing a man can is keep a clean face and smooth haircut, and that's what we give every single customer.</p>
+                    </div>
+                    <h5 class="about-spacing">Open Hours:</h5>
                     <h5>Mon-Fri: 10:30am-6:00pm</h5>
                     <h5>Saturdays: 9:00am-5:00pm</h5>
-                    <h5 class="pb-5 about-time">Sundays: <span class="font-weight-bold">CLOSED</span></h5>
+                    <h5 class=" about-time">Sundays: <span class="font-weight-bold">CLOSED</span></h5>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6  about-pic">
-                    <img class="img-fluid pt-3 pb-3" src="https://images.unsplash.com/photo-1566915032724-39883f62180b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="barshop">
+                <div class="col-lg-4 col-md-4 col-sm-6 pic-pad about-margin phone-size">
+                    <img class="img-fluid" src="images/lilkid.jpg" alt="barshop">
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 about-pic">
-                    <img class="img-fluid pt-3 pb-3" src="https://images.unsplash.com/photo-1566915032724-39883f62180b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="beard balm">
+                <div class="col-lg-4 col-md-4 col-sm-6 about-margin pic-pad phone-size">
+                    <img class="img-fluid" src="images/oldman.jpg" alt="beard balm">
                 </div>
             </div>
         </div>
@@ -45,7 +78,7 @@
     <!-- End About -->
 
     <!-- Start Prices -->
-    <section class="price-section pt-4">
+    <section id="Prices"  class="price-section pt-4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -121,7 +154,7 @@
 
         <!--Start Portfolio -->
 
-        <section class="portfolio-section">
+        <section id="Portfolio"  class="portfolio-section">
                 <div class="row">
                     <!--
                     <div class="col-lg-g p-0">
@@ -132,14 +165,14 @@
                     -->
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="quote text-center">
-                            <h4>"Long Hair Boy Get a Haircut!"</h4>
-                            <h3>-Beening turning boys into Men since '98</h3>
+                            <h5>"Long Hair Boy Get a Haircut!"</h5>
+                            <h5>-Beening turning boys into Men since '98</h5>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 p-0">
                         <div class="quote text-center">
-                            <h4>"Long Hair Boy Get a Haircut!"</h4>
-                            <h3>-Beening turning boys into Men since '98</h3>
+                            <h5>"Long hair boy get a haircut!"</h5>
+                            <h5>-Turning boys into Men since '98</h5>
                         </div>
                     </div>
                 </div>
@@ -147,10 +180,10 @@
 
         <!--End Portfolio -->
 
-        <!--Start The Cuts -->
+        <!--Start The Cuts 
 
         <section class="pt-5 pb-5  cut-section">        
-           <div class="container pt-5">
+           <div class="container">
                <div class="row mb-5">
                    <div class="col-lg-4 col-md-4 col-sm-4 pb-5 phii"><h1>The Cuts</h1></div>
                    <div class="col-lg-6 col-md-6 col-sm-7 ml-4 pl-4 font-weight-lighter"><h4><blockquote><q>Babies aren't born with a lock of hair and old men are loosing theirs. So between the cradle and the grave it's only a haircut and a shave</q></blockquote></h4></div>
@@ -204,7 +237,7 @@
 
        <!--Start Booking -->
 
-       <section class="booking-section">
+       <section id="Booking"  class="booking-section">
            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
@@ -218,27 +251,29 @@
                 <form class="pt-4">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="inputfname">First Name</label>
-                            <input type="name" class="form-control" id="inputfname" placeholder="First Name">
+                            <label for="inputname">Name</label>
+                            <input type="name" class="form-control" id="inputname" placeholder="Name">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputlname">Last Name</label>
-                            <input type="text" class="form-control" id="inputlname" placeholder="Last Name">
+                            <label for="inputemail">Email</label>
+                            <input type="text" class="form-control" id="inputemail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputdate">Date</label>
+                            <input type="date" class="form-control" id="inputdate" placeholder="Date">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputtime">Time</label>
+                            <input type="time" class="form-control" id="inputtime" placeholder="Time">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputdate">Date</label>
-                        <input type="date" class="form-control" id="inputdate" placeholder="Date">
+                        <label for="inputmessage">Message</label>
+                        <input type="text" class="form-control form-message" id="inputmessage" placeholder="Message">
                     </div>
-                    <div class="form-group">
-                        <label for="inputtime">Time</label>
-                        <input type="time" class="form-control" id="inputtime" placeholder="Time">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputphone">Phone</label>
-                        <input type="text" class="form-control" id="inputphone" placeholder="Phone">
-                    </div>
-                    <button type="submit" class="btn btn-secondary mt-3">Submit</button>
+                    <button type="submit" class="btn btn-secondary mt-2">Submit</button>
                 </form>
             </div>
         </section>
@@ -275,7 +310,9 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="myscript.js"></script>
 </body>
 </html>
